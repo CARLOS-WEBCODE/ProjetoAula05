@@ -12,9 +12,18 @@ namespace ProjetoAula05.Repositories
     /// </summary>
     public abstract class FuncionarioAbstractRepository
     {
-        #region
+        #region Propriedades
 
         protected List<Funcionario> Funcionarios { get; set; }
+
+        #endregion
+
+        #region Construtores
+
+        public FuncionarioAbstractRepository()
+        {
+            Funcionarios = new List<Funcionario>();
+        }
 
         #endregion
 

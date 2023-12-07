@@ -51,7 +51,8 @@ namespace ProjetoAula05.Repositories
         {
             //SINTAXE LINQ
             var query = from f in Funcionarios
-                        orderby f.Nome ascending select f;
+                        orderby f.Nome ascending
+                        select f;
 
             return query.ToList();
         }
@@ -85,10 +86,5 @@ namespace ProjetoAula05.Repositories
                         select f;
             return query.FirstOrDefault();
         }
-
-        
-
-        
-        
     }
 }
